@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+}
+body{
+    background: url('images/pattern-background-desktop.svg'), hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+}
+.main{
+    margin: 19px auto 0;
+    width: 28%;
+    border-radius: 20px;
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+.hero{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.content{
+    margin: 30px 30px 0;
+}
+.heading, .paragraph{
+    text-align: center;
+}
+.heading{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.paragraph{
+    color: hsl(224, 23%, 55%);
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* price section */
+.price-section{
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.plan{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 45px;
+}
+.plan-text{
+    margin-left: 15px;
+}
+.plan-text h2{
+    font-size: 16px;
+}
+.plan-heading{
+    font-weight: 900;
+    margin-bottom: 3px;
+    color: hsl(223, 47%, 23%);
+}
+.price{
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+.change{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+
+/* button */
+.button{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+.pay-button{
+    width: 100%;
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px hsl(245, 90%, 88%);
+    margin-bottom: 20px;
+}
+.order-button{
+    color: hsl(224, 23%, 55%);
+}
+
+
+/* ACTIVE STATES */
+.change:hover{
+    text-decoration: none;
+    color: hsl(245, 71%, 66%);
+}
+.pay-button:hover{
+    background-color: hsl(245, 71%, 66%);
+}
+.order-button:hover{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+
+/* MOBILE SCREEN STYLING */
+@media(max-width:500px){
+    body{
+        background: url('images/pattern-background-mobile.svg'), hsl(225, 100%, 94%);
+        background-repeat: no-repeat;
+    }
+    .main{
+        width: 90%;
+        margin: 45px auto 0;
+    }
+    .paragraph{
+        width: 95%;
+    }
+    .pay-button{
+        padding: 15px 0;
+    }
+}
